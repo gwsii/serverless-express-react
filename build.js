@@ -10,7 +10,6 @@ if (!process.env.STAGE) {
 const reactAppPackagePath = path.join(__dirname, 'browser-client', 'package.json')
 const reactAppPackageBackup = reactAppPackagePath + '.bak'
 const reactAppPackage = fs.readFileSync(reactAppPackagePath, 'utf8')
-console.log(reactAppPackage)
 const package = JSON.parse(reactAppPackage)
 
 // Backup & Replace with updated package

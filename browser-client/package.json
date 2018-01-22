@@ -1,4 +1,5 @@
 {
+  "homepage": "/dev/",
   "name": "browser-client",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +10,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -r ./build & react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

@@ -1,9 +1,8 @@
 {
-  "name": "geek-command",
+  "name": "serverless-express-react",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "install": "pushd browser_client && npm install && popd && npm install",
     "start": "nodemon ./bin/www",
     "build": "node ./build.js",
     "deploy": "sls deploy --stage %STAGE% --region %REGION%",
