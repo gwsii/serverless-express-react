@@ -1,0 +1,16 @@
+# serverless.yml
+service: geek-command
+provider:
+  name: aws
+  runtime: nodejs4.3
+
+functions:
+  root:
+    handler: handler.handler
+    events:
+      - http: ANY /
+
+  proxy:
+    handler: handler.handler
+    events:
+      - http: ANY /{proxy+}
