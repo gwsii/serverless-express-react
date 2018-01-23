@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build": "node ./build.js",
-    "deploy": "sls deploy --stage %STAGE% --region %REGION%",
-    "remove": "sls remove --stage %STAGE% --region %REGION%",
-    "build-and-deploy": "npm run build && npm run deploy"
+    "build-and-deploy:dev": "node ./build.js dev",
+    "build-and-deploy:prod": "node ./build.js prod"
   },
   "dependencies": {
     "aws-serverless-express": "^3.0.2",

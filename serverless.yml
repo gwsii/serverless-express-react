@@ -1,5 +1,5 @@
-# serverless.yml
 service: express-react
+
 provider:
   name: aws
   runtime: nodejs4.3
