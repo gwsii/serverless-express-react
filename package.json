@@ -4,8 +4,13 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build-and-deploy:dev": "node ./build.js dev",
-    "build-and-deploy:prod": "node ./build.js prod"
+    "build:local": "node ./build.js",
+    "build:dev": "node ./build.js dev",
+    "build:prod": "node ./build.js prod",
+    "deploy:dev": "sls deploy --stage dev --region us-west-2",
+    "deploy:prod": "sls deploy --stage prod --region us-west-2",
+    "remove:dev": "sls remove --stage dev --region us-west-2",
+    "remove:prod": "sls remove --stage prod --region us-west-2"
   },
   "dependencies": {
     "aws-serverless-express": "^3.0.2",
